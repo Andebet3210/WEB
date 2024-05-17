@@ -6,14 +6,33 @@
   flex-direction: column;
   background-color: rgb(237, 234, 234);
 }
-
+body{
+  margin: 0%;
+}
 .top {
+  
   text-align: right;
-  display: flex;
+  display:flex;
   justify-content: space-between;
-  background-color: white;
+  background:#b8d70b;
+  position: fixed;
+  width: 100%;
+  height:5%;
+  align-items: center;
+  padding-bottom: 1%; 
+  
+}
+.logo .my {
+  color: green;
 }
 
+.logo .lo {
+  color: yellow;
+}
+
+.logo .go {
+  color: red;
+}
 .logo {
   margin-left: 10%;
   color: #6070ff;
@@ -21,22 +40,23 @@
 }
 
 .logo :hover {
-  color: brown;
+  color: rgb(154, 12, 145);
 }
-
 .navigation {
   margin-top: 3%;
   display: flex;
   justify-content: space-between;
-  text-decoration: none;
+  text-decoration: none; 
 }
-
 .items a {
-  padding: 10px;
-  text-decoration: none;
+  padding: 1dvh;
   justify-content: space-between;
+ color: rgb(47, 30, 110);
+  font-size: 150%;
 }
-
+.items a:hover{
+  color: brown;
+}
 .headline {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 40%;
@@ -45,7 +65,6 @@
   text-align: left;
   margin-left: 1%;
 }
-
 .headline-container-para {
   font-family: var(--font-family);
   font-weight: 400;
@@ -54,20 +73,16 @@
   color: #344563;
   text-align: left;
 }
-
 .Address {
   color: #7f8cff;
   margin-left: 15%;
 }
-
 .Address :hover {
-  color: black;
+  color: rgb(127, 22, 22);
 }
-
 .Address a :hover {
   transform: scale(1.5);
 }
-
 .bg {
   background-image: url(/css/images/im.jpg);
   background-size: cover;
@@ -75,7 +90,7 @@
   background-color: white;
   border-bottom-left-radius: 9%;
   border-bottom-right-radius: 9%;
-  margin: 0 5% 0 5%;
+  
 }
 
 .img img {
@@ -301,10 +316,12 @@ input {
 @media only screen and (min-width: 375px) {
   .toggle svg {
     display: block;
+    
   }
 
   .items a {
     display: none;
+    
   }
 }
 
@@ -312,9 +329,14 @@ input {
   .toggle svg {
     display: none;
   }
-
+/* .top{
+  
+    height: 10%;
+    align-items: center;
+} */
   .items a {
     display: inline-block;
+    
   }
 
   .img img {
