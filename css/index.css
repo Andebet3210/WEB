@@ -6,22 +6,23 @@
   flex-direction: column;
   background-color: rgb(237, 234, 234);
 }
-body{
+
+body {
   margin: 0%;
 }
+
 .top {
-  
   text-align: right;
-  display:flex;
+  display: flex;
   justify-content: space-between;
-  background:#b8d70b;
+  background: #b8d70b;
   position: fixed;
   width: 100%;
-  height:5%;
+  height: 5%;
   align-items: center;
-  padding-bottom: 1%; 
-  
+  padding-bottom: 1%;
 }
+
 .logo .my {
   color: green;
 }
@@ -33,30 +34,98 @@ body{
 .logo .go {
   color: red;
 }
+
 .logo {
   margin-left: 10%;
   color: #6070ff;
   margin-top: 3%;
 }
 
-.logo :hover {
-  color: rgb(154, 12, 145);
-}
 .navigation {
   margin-top: 3%;
   display: flex;
   justify-content: space-between;
-  text-decoration: none; 
+  text-decoration: none;
 }
-.items a {
-  padding: 1dvh;
+
+.items {
   justify-content: space-between;
- color: rgb(47, 30, 110);
+  color: rgb(47, 30, 110);
   font-size: 150%;
 }
-.items a:hover{
+
+.sidebar a {
+  width: 100%;
+}
+
+.ham-list ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 36px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.items a:hover {
   color: brown;
 }
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 150px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* hamberger style */
+
+.navigation1 {
+  position: fixed;
+  list-style-type: none;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 999;
+  background-color: rgba(96, 112, 255, 0.8);
+  backdrop-filter: blur(3px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+}
+
+.fg li {
+  background: #ebebff;
+  border: none;
+  border-radius: 20%;
+  color: #396df2;
+  cursor: pointer;
+  font-size: 100%;
+}
+
+.ham-list ul li {
+  list-style-type: none;
+  text-align: left;
+}
+
+.ham-list {
+  display: flex;
+}
+
+.X-image img {
+  width: 10%;
+  height: 40%;
+}
+
+/* hamberger style */
+
 .headline {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 40%;
@@ -65,24 +134,29 @@ body{
   text-align: left;
   margin-left: 1%;
 }
+
 .headline-container-para {
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 100%;
+  font-size: 150%;
   line-height: 150%;
   color: #344563;
   text-align: left;
 }
+
 .Address {
   color: #7f8cff;
   margin-left: 15%;
 }
+
 .Address :hover {
   color: rgb(127, 22, 22);
 }
+
 .Address a :hover {
   transform: scale(1.5);
 }
+
 .bg {
   background-image: url(/css/images/im.jpg);
   background-size: cover;
@@ -90,7 +164,6 @@ body{
   background-color: white;
   border-bottom-left-radius: 9%;
   border-bottom-right-radius: 9%;
-  
 }
 
 .img img {
@@ -122,15 +195,6 @@ body{
   display: flex;
   gap: 10%;
   margin-left: 5%;
-}
-
-.fg li {
-  background: #ebebff;
-  border: none;
-  border-radius: 20%;
-  color: #396df2;
-  cursor: pointer;
-  font-size: 100%;
 }
 
 .cn ul li {
@@ -168,16 +232,18 @@ body{
   font-size: 150%;
   line-height: 130%;
   color: #172b4d;
-  padding-top: 15%;
+  padding-top: 5%;
   margin-left: 15%;
-  margin-top: 10%;
+
+  /* margin-right: 5%; */
+  margin-top: 0%;
   border-top-right-radius: 10%;
 }
 
 .para-2 {
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 100%;
+  font-size: 150%;
   line-height: 150%;
   color: #344563;
   margin-left: 15%;
@@ -267,6 +333,11 @@ body{
   color: white;
 }
 
+/* .pa1{
+  border: 2px solid red;
+
+} */
+
 input {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #396df2;
@@ -316,12 +387,10 @@ input {
 @media only screen and (min-width: 375px) {
   .toggle svg {
     display: block;
-    
   }
 
   .items a {
     display: none;
-    
   }
 }
 
@@ -329,14 +398,13 @@ input {
   .toggle svg {
     display: none;
   }
-/* .top{
-  
-    height: 10%;
-    align-items: center;
-} */
+
+  .navigation1 {
+    display: none;
+  }
+
   .items a {
     display: inline-block;
-    
   }
 
   .img img {
