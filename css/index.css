@@ -333,11 +333,6 @@ body {
   color: white;
 }
 
-/* .pa1{
-  border: 2px solid red;
-
-} */
-
 input {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #396df2;
@@ -373,6 +368,7 @@ input {
   border-radius: 5%;
   margin-left: 5%;
   width: 85%;
+  color: #000;
 }
 
 .button input {
@@ -382,6 +378,10 @@ input {
   font-size: 100%;
   font-weight: 17%;
   border-radius: 10%;
+}
+.error-message {
+  color:red;
+  margin-bottom: 10px;
 }
 
 @media only screen and (min-width: 375px) {

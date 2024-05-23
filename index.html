@@ -14,6 +14,7 @@
                 const navigation1 = document.querySelector('.navigation1');
                 navigation1.style.display = 'none';
             }
+               
 
     </script>
     <title>web</title>
@@ -322,14 +323,36 @@ Thank you for visiting my portfolio, and I look forward to connecting with you!<
     coding.
     I’d love to help with it!
  </p></div>
- <form action="https://formspree.io/f/xvoeykyl" method="post">
+ <form id="contact-form" action="https://formspree.io/f/xvoeykyl"  method="post">
     <div class="name"><input type="text" id="name" maxlength="30" required  placeholder="Enter your name" name="full name" ></div>
        <div class="email"> <input type="text" id="email" maxlength="50" required placeholder="Enter your email" name="gmail"></div>
         <div class="txtarea"><input type="text" id="textarea" maxlength="500" placeholder="Write your Message here"></div>
+
+        <div id="error-message" class="error-message"></div>
+      <input type="submit" class="get" value="Get in touch" > 
+      
  </form>
-<div class="button"> <input type="submit" value="Get in touch"></div>
+<script>
+    const form = document.getElementById('contact-form');
+    const emailInput = document.getElementById('email');
+    const errorMessage = document.getElementById('error-message');
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const email = emailInput.value;
+
+        if (email === email.toLowerCase()) {
+            form.submit();
+        } else {
+            errorMessage.textContent = 'Please enter your email in lowercase.';
+        }
+    });</script>
 
 </section>
+
+
 </section>
 </body>
+
 </html>
