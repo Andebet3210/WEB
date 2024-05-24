@@ -379,8 +379,9 @@ input {
   font-weight: 17%;
   border-radius: 10%;
 }
+
 .error-message {
-  color:red;
+  color: red;
   margin-bottom: 10px;
 }
 
@@ -389,7 +390,7 @@ input {
     display: block;
   }
 
-  .items  a {
+  .items a {
     display: none;
   }
 }
