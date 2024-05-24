@@ -5,56 +5,354 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
+    <script>
+        function openham() {
+                const navigation1 = document.querySelector('.navigation1');
+                navigation1.style.display = 'flex';
+            }
+            function closeham() {
+                const navigation1 = document.querySelector('.navigation1');
+                navigation1.style.display = 'none';
+            }
+               
+
+    </script>
     <title>web</title>
 </head>
 
 <body >
     <main class="body">
-        <section class="top">
+        <div class="top">
+            
+                 <div class="navigation1">
+                    <div class="X-image">
+                        <img src="css\images\ximage.png" alt="x-image"  onclick="closeham()">
+                    </div>
+                             <div class="ham-list">
+                                <ul>
+                               <li onclick="closeham()"><a href="#portfolio">portfolio</a></li>
+                               <li onclick="closeham()"><a href="#about">about</a></li>
+                               <li onclick="closeham()"><a href="#contact">contact </a></li>
+                        </ul>
+                            </div>
+                        </div>
                 <div class="logo">
-                    <h3>My Logo</h3></div>
+                        <h3><span class="my">My</span> <span class="lo">Lo</span><span class="go">go</span></h3></div>
+                       
                     <div class="navigation">
                     <div class="toggle">  
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg  onclick="openham()" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M11 15C11 14.4477 11.4477 14 12 14H28C28.5523 14 29 14.4477 29 15C29 15.5523 28.5523 16 28 16H12C11.4477 16 11 15.5523 11 15ZM11 20C11 19.4477 11.4477 19 12 19L28 19C28.5523 19 29 19.4477 29 20C29 20.5523 28.5523 21 28 21L12 21C11.4477 21 11 20.5523 11 20ZM12 24C11.4477 24 11 24.4477 11 25C11 25.5523 11.4477 26 12 26H28C28.5523 26 29 25.5523 29 25C29 24.4477 28.5523 24 28 24H12Z"
-                                fill="#6070FF" />
+                                fill="#6070FF"/>
                         </svg>
+                
                     </div>
-                            <div class="items">
+                            <div class="items">  
+                                <a href="#portfolio">portfolio</a>
+                                <a href="#about">about</a>
+                                <a href="#contact">contact </a>
                                 
-                                <a href="portfolio">portfolio</a></li>
-                                <a href="contact us">contact us</a></li>
-                                <a href="about">about</a></li>
+                                
                     </div>
 
                     </div>        
-                 </section>
+                </div>
 
-
-    <section class="bg" >
+    <section class="bg"  id="portfolio" >
         <div class="headline">
             <h1>I'm Andebet </h1>
-            <h1> I am CS student !</h1>
+            <h1> I am  cs student !</h1>
         </div>
-        <p class="headline-container-para"> From wolkite university since 2014 E.C.
-        I'm fascinated by web programming(HTML,CSS & JS).
-        i wanna be a software developer or website developer,i hope i will be.
-        a few months ago i don't like coding but
-        now i love it thanks to ma instructor.</p>
+        <p class="headline-container-para"> I am Andebet, a passionate CS student from Wolkite University. Within my portfolio, I showcase my skills and projects
+        related to web programming, specifically in HTML, CSS, and JavaScript.
+        
+        Throughout my academic journey since 2014 E.C., I have developed a strong interest in coding and web development. What
+        once started as a mere curiosity has now become a deep passion. I am determined to pursue a career as a software
+        developer or website developer, and I believe my portfolio reflects my dedication and growth in these areas.
+        
+        In my portfolio, you will find a collection of projects that I have worked on, demonstrating my proficiency in various
+        aspects of web programming. From responsive web designs to interactive user interfaces, each project showcases my
+        ability to bring ideas to life using the latest technologies and industry best practices.</p>
         </div>
         <div class="Address">
             <h4>LET'S CONNECT</h4>
-        <a href="https://andebetmolla1900@gmail.com" target="_blank" rel="noopener"><img src="css\unnamed.png" content
+        <a href="https://andebetmolla1900@gmail.com" target="_blank" rel="noopener"><img src="css\images\gmail.png" content
                 width="25"></a>
-        <a href="https://Andebet3210" target="_blank" rel="noopener"><img src="css\GitHub-Mark-ea2971cee799.png" content
+        <a href="https://Andebet3210" target="_blank" rel="noopener"><img src="css\images\GitHub-Mark-ea2971cee799.png" content
+                width="25"></a>
+                <a href="https://www.linkedin.com/in/andebet-molla-30912a309/" target="_blank" rel="noopener" ><img src="css\images\linkdin.png" content
                 width="25"></a>
         </div>
  </section>
-</main>
 
+
+<section class="sec2">
+
+    
+    <div class="img">
+        <img src="css\images\image.png" alt="image">
+    </div>
+    <div class="first">
+    <div class="flex">
+      <div class="h1">
+        <h2>Facebook 360</h2>
+     </div>
+     <div class="cn">
+       
+        <ul>
+            <b>FACEBOOK</b>
+        <li> Full Stuck Dev</li>
+            <li>2016
+                </li>
+            </ul>
+            </div>
+    </div>
+<div class="pa">
+    A daily selection of privately personalized reads; 
+    no accounts or sign-ups required.
+</div>
+   <div >
+<ul class="fg">
+    <li>html</li>
+    <li>css</li>
+    <li>javaScript</li>
+    </ul>
+    </div>
+<div class="button">
+    <button>
+        See project
+    </button>
+</div>
+</div>
+</section>
+  
+
+<div class="sec2"> 
+    <div class="sec2_1">
+  <div class="img">
+        <img src="css\image1.png" alt="image">
+    </div>
+    <div class="first">
+    <div class="h1">
+        <h2>Navigation</h2>
+        </div>
+    <div class="cn">
+      <ul>
+            <b>Uber</b>
+            <li> Load Developer</li>
+            <li>2017
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="pa">
+        A daily selection of privately personalized reads;
+        no accounts or sign-ups required.
+    </div>
+    <div>
+        <ul class="fg">
+            <li>html</li>
+            <li>css</li>
+            <li>javaScript</li>
+        </ul>
+    </div>
+    <div class="button">
+        <button>
+            See project
+        </button>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="sec2">
+   
+<div class="img">
+    <img src="css\image11.png" alt="image">
+</div>
+<div class="first">
+<div class="h1">
+    <h2>Tonic</h2>
+</div>
+
+<div class="cn">
+
+    <ul>
+        <b>CANOPY</b>
+        <li> Back End Dev</li>
+        <li>2015
+        </li>
+    </ul>
+</div>
+
+<div class="pa">
+    A daily selection of privately personalized reads;
+    no accounts or sign-ups required.
+</div>
+<div>
+    <ul class="fg">
+        <li>html</li>
+        <li>css</li>
+        <li>javaScript</li>
+    </ul>
+</div>
+<div class="button">
+    <button>
+        See project
+    </button>
+</div>
+</div>
+</div>
+
+
+
+<div class="sec2">
+    <div class="sec2_1">
+    <div class="img">
+        <img src="css\image111.png" alt="image">
+    </div>
+<div class="first">
+    <div class="h1">
+        <h2>Multi-Post Stories</h2>
+    </div>
+
+    <div class="cn">
+
+        <ul>
+            <b>INSTAGRAM</b>
+            <li> Full stack Dev</li>
+            <li>2016
+            </li>
+        </ul>
+    </div>
+
+    <div class="pa">
+        A daily selection of privately personalized reads;
+        no accounts or sign-ups required.
+    </div>
+    <div>
+        <ul class="fg">
+            <li>html</li>
+            <li>css</li>
+            <li>javaScript</li>
+        </ul>
+    </div>
+    <div class="button">
+        <button>
+            See project
+        </button>
+    </div>
+</div>
+</div>
+</div>
+ <div class="sec2"> 
+    <div class="pa1">
+   
+     <div class="head-line" id="about">
+      <h1>About Myself</h1>  
+    </div>
+    
+<p class="para-2"> If you have any inquiries or would like to discuss potential collaboration opportunities, feel free to reach out to me
+through the provided contact information.
+
+Thank you for visiting my portfolio, and I look forward to connecting with you!</p>
+
+<div class="Address">
+    <h4>LET'S CONNECT</h4>
+    <a href="https://andebetmolla1900@gmail.com" target="_blank" rel="noopener"><img src="css\images\gmail.png" content
+            width="25"></a>
+    <a href="https://Andebet3210" target="_blank" rel="noopener"><img src="css\images\GitHub-Mark-ea2971cee799.png"
+            content width="25"></a>
+            <a href="https://www.linkedin.com/in/andebet-molla-30912a309/" target="_blank" rel="noopener"><img
+                    src="css\images\linkdin.png" content width="25"></a>
+</div>
+<div class="button">
+    <button>
+        Get my resume
+    </button>
+    </div>
+</div>
+
+<div class="first">
+    <div class="lan_all">
+<div class="lang">
+    <div class="pop">
+        <h3>languages</h3>
+        <img src="css\pop.png" alt="image">
+    </div>
+    <ul class="js">
+       <li  class="jsp" ><img src="css\images\js.png" alt="image">
+         <div class=" javaScript">
+            JavaScript
+            </div>
+         </li>
+        <li class="jsp"><img src="css\html.png" alt="image">
+            <div class=" javaScript">
+                HTML
+            </div>
+        </li>
+        <li class="jsp"><img src="css\css.png" alt="image">
+            <div class=" javaScript">
+               CSS
+            </div>
+        </li>
+        </ul>  
+
+    <div class="topp">
+        <li class="fw"><h3>Frame Work</h3></li>
+        <img src="css\union.png" alter="disable">
+    </div>
+    <div class="topp">
+        <li class="fw"><h3>Skills</h3></li>
+        <img src="css\union.png" alter="disable">
+    </div>
+    
+</div>
+</div></div>
+</div>
+<section class="contact" id="contact">
+    <div class="header">
+      <h1>Contact me</h1>  
+    </div>
+<div class="paragraph">
+    <p class="para">If you have an application you are interested in developing,
+         a feature that you need built or a project that needs
+    coding.
+    I’d love to help with it!
+ </p></div>
+ <form id="contact-form" action="https://formspree.io/f/xvoeykyl"  method="post">
+    <div class="name"><input type="text" id="name" maxlength="30" required  placeholder="Enter your name" name="full name" ></div>
+       <div class="email"> <input type="text" id="email" maxlength="50" required placeholder="Enter your email" name="gmail"></div>
+        <div class="txtarea"><input type="text" id="textarea" maxlength="500" placeholder="Write your Message here"></div>
+
+        <div id="error-message" class="error-message"></div>
+      <input type="submit" class="get" value="Get in touch" > 
+      
+ </form>
+<script>
+    const form = document.getElementById('contact-form');
+    const emailInput = document.getElementById('email');
+    const errorMessage = document.getElementById('error-message');
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const email = emailInput.value;
+
+        if (email === email.toLowerCase()) {
+            form.submit();
+        } else {
+            errorMessage.textContent = 'Please enter your email in lowercase.';
+        }
+    });</script>
+
+</section>
+
+
+</section>
 </body>
-
-
 
 </html>
